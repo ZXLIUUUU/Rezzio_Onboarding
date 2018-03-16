@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -11,8 +12,123 @@
 @import url("css/gForm1.css");
 
 
+
 </style>
+<script src="js/Rezzio_Onboarding.js"></script>
 </head>
+<body>
+
+  <div class="hide" id="popup-form-WorkExp">
+  <div class="container_popform">
+   <div class="form_Name">Work Experience</div>
+  <div>
+     <label class="form_subName_small">Company</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="Enter your company name">
+  </div>
+  <div>
+     <label class="form_subName_small">Title</label>
+     <input class="one_in_a_row" type="text" placeholder="Manager">
+  </div>
+  <div>
+     <label class="form_subName_small">City/Sate</label>
+     <input class="one_in_a_row" type="text" placeholder=" Street, State, Zip">
+   </div> 
+   <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Start Date</label><br>
+        <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">End Date</label><br>
+         <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+   </div>
+   <div>
+       <label class="form_subName_large">Responsibilities</label>
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+   </div>
+   
+    <div>
+       <label class="form_subName_large">Skills Gained</label>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button id="Submit-work">submit</button>
+         </div>
+         
+</div>
+</div>
+
+<div class="hidden" id="popup-form-Internship">
+  <div class="container_popform">
+   <div class="form_Name">Internship</div>
+  <div>
+     <label class="form_subName_small">Company</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="Enter your company name">
+  </div>
+  <div>
+     <label class="form_subName_small">Title</label>
+     <input class="one_in_a_row" type="text" placeholder="Manager">
+  </div>
+  <div>
+     <label class="form_subName_small">City/Sate</label>
+     <input class="one_in_a_row" type="text" placeholder=" Street, State, Zip">
+   </div> 
+   <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Start Date</label><br>
+        <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">End Date</label><br>
+         <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+   </div>
+   <div>
+       <label class="form_subName_large">Responsibilities</label>
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+   </div>
+   
+    <div>
+       <label class="form_subName_large">Skills Gained</label>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button id="Submit-intern">submit</button>
+         </div>
+         
+</div>
+</div>
 
 <body>
 <div class="background_picture">
@@ -78,7 +194,7 @@ An internship is a fixed-term work placement usually done either during the holi
       <table class="table table-hover">
 				<thead>
 					<tr>
-						<th> Work Experience 
+						<th><a class="eduinfo_U" href="#0" id="open-WorkExp" onClick="formPopUp()"> Work Experience</a> 
 					    <p >
 
 Work experience gives participants the chance to get an overview of an industry by shadowing a professional in their chosen career.</p></th>
