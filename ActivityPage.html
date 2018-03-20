@@ -3,22 +3,131 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <title>Rezzio_Activities</title>
 <style type="text/css">
-@import url("css/bootstrap.css");
 @import url("css/gForm1.css");
-/*@import url("css/bootstrap.min.css");*/
 
 </style>
 </head>
 
 <body>
+<div class="hide" id="popup-form-sport">
+<div class="container_popform_sport">
+   <div class="form_Name">Sports</div>
+  <div>
+     <label class="form_subName_small">Team Name</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="Enter name of organization">
+  </div>
+  
+
+  <div>
+     <label class="form_subName_small">City/Sate</label>
+     <input class="one_in_a_row" type="text" placeholder=" Street, State, Zip">
+   </div> 
+   <div>
+        <label class="form_subName_small">Role</label>
+     <input class="one_in_a_row" type="text" placeholder="Player, Coach, Mentor">
+  </div>
+   <div>
+        <label class="form_subName_small">Sport Type</label>
+     <input class="one_in_a_row" type="text" placeholder="Club, Divison1, Pick Up, Leauge">
+  </div>
+   <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Start Date</label><br>
+        <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">End Date</label><br>
+         <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+   </div>
+   
+    <div>
+       <div><label class="form_subName_large alignleft ">Skills Gained </label></div>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button type="button" onClick="document.getElementById('popup-form-sport').style.display='none' ">submit</button>
+         </div>
+</div>
+</div>
+
+<div class="hide" id="popup-form-org">
+<div class="container_popform">
+   <div class="form_Name"> Organization</div>
+  <div>
+     <label class="form_subName_small">Organization</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="Enter name of organization">
+  </div>
+  <div>
+     <label class="form_subName_small">Title</label>
+     <input class="one_in_a_row" type="text" placeholder="Presient">
+  </div>
+  <div>
+     <label class="form_subName_small">City/Sate</label>
+     <input class="one_in_a_row" type="text" placeholder=" Street, State, Zip">
+   </div> 
+   <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Start Date</label><br>
+        <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">End Date</label><br>
+         <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+   </div>
+   <div>
+       <label class="form_subName_large">Responsibilities</label>
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+   </div>
+   
+    <div>
+       <label class="form_subName_large">Skills Gained</label>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button type="button" onClick="document.getElementById('popup-form-org').style.display='none' ">submit</button>
+
+</div>
+</div>
+</div>
+
+
 <div class="background_picture">
   
         <a href="workWxpPage.html" >
-          <div class="glyphicon glyphicon-circle-arrow-left arrows"></div>
+          <img height="50px" src="imgs/pageturner_pre.png">
         </a>
   
  
@@ -29,7 +138,7 @@
         <table class="table table-hover">
 				<thead>
 					<tr>
-						<th>  Organizations
+						<th>  <div><a class="eduinfo_U" href="#0" id="open-InrenExp" onClick="document.getElementById('popup-form-org').style.display='inline' ">Organizations</a></div> 
 					    <p >And Organized body of people with a particular purpose，
 especially a business, society, association, non-profit, etc</p>
 </th>
@@ -39,28 +148,28 @@ especially a business, society, association, non-profit, etc</p>
 
 					<tr >
 						<td>
-							 <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Company
+							 <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Company
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Title
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Title
 						</td>
 					</tr>
 					<tr >
 						<td>
-                        <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Dates
+                        <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Dates
 							
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Responsibilities
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Responsibilities
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Skills Gained/Used
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Skills Gained/Used
 						</td>
 					</tr>              
 				</tbody>
@@ -78,9 +187,9 @@ especially a business, society, association, non-profit, etc</p>
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>  Clubs/Activities
+						<th>  <div><a class="eduinfo_U" href="#0" id="open-Club" onClick="document.getElementById('popup-form-org').style.display='inline' ">Clubs/Activities</a></div>
 					    <p >A club/ an association of two or more people united by a common interest of goal
-                        </p></br>
+                        </p><br>
                         </th>
 					</tr>
 				</thead>
@@ -88,28 +197,28 @@ especially a business, society, association, non-profit, etc</p>
 
 					<tr >
 						<td>
-							 <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Company
+							 <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Company
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Title
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Title
 						</td>
 					</tr>
 					<tr >
 						<td>
-                        <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Dates
+                        <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Dates
 							
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Responsibilities
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Responsibilities
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Skills Gained/Used
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Skills Gained/Used
 						</td>
 					</tr>              
 				</tbody>
@@ -126,8 +235,8 @@ especially a business, society, association, non-profit, etc</p>
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>  Sports
-					    <p >An activity in which an individual or team competes against another or others for entertainment. </p></br>
+						<th> <a class="eduinfo_U" href="#0" onClick="document.getElementById('popup-form-sport').style.display='inline' "> Sports
+					    <p >An activity in which an individual or team competes against another or others for entertainment. </p><br>
                         </th>
 					</tr>
 				</thead>
@@ -135,28 +244,28 @@ especially a business, society, association, non-profit, etc</p>
 
 					<tr >
 						<td>
-							 <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Company
+							 <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Company
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Title
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Title
 						</td>
 					</tr>
 					<tr >
 						<td>
-                        <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Dates
+                        <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Dates
 							
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Responsibilities
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Responsibilities
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Skills Gained/Used
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Skills Gained/Used
 						</td>
 					</tr>              
 				</tbody>
@@ -175,12 +284,11 @@ especially a business, society, association, non-profit, etc</p>
     </div>
   </div>
      <a href="SkillPage.html" >
-          <div class="glyphicon glyphicon-circle-arrow-right arrows"></div>
+          <img height="50px" src="imgs/pageturner_next.png">
         </a>
 </div>
 
 
- 
-
 </body>
 </html>
+

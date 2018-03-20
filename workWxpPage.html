@@ -4,19 +4,75 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-
+   
 <title>Rezzio_workexp</title>
 <style type="text/css">
-@import url("css/bootstrap.css");
 @import url("css/gForm1.css");
 
 
 
 </style>
-<script src="js/Rezzio_Onboarding.js"></script>
+
 </head>
 <body>
+
+<div class="hide" id="popup-form-Internship">
+  <div class="container_popform">
+   <div class="form_Name">Internship</div>
+  <div>
+     <label class="form_subName_small">Company</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="Enter your company name">
+  </div>
+  <div>
+     <label class="form_subName_small">Title</label>
+     <input class="one_in_a_row" type="text" placeholder="Manager">
+  </div>
+  <div>
+     <label class="form_subName_small">City/Sate</label>
+     <input class="one_in_a_row" type="text" placeholder=" Street, State, Zip">
+   </div> 
+   <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Start Date</label><br>
+        <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">End Date</label><br>
+         <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
+      </div>
+   </div>
+   <div>
+       <label class="form_subName_large">Responsibilities</label>
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
+   </div>
+   
+    <div>
+       <label class="form_subName_large">Skills Gained</label>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button type="button" id="Submit-intern" onClick="document.getElementById('popup-form-Internship').style.display='none' ">submit</button>
+         </div>
+         
+</div>
+</div>
+
+
 
   <div class="hide" id="popup-form-WorkExp">
   <div class="container_popform">
@@ -68,73 +124,18 @@
          </tr>
          </tbody>
          </table>
-         <button id="Submit-work">submit</button>
+          <button type="button" id="Submit-intern" onClick="document.getElementById('popup-form-WorkExp').style.display='none' ">submit</button>
          </div>
          
 </div>
 </div>
 
-<div class="hidden" id="popup-form-Internship">
-  <div class="container_popform">
-   <div class="form_Name">Internship</div>
-  <div>
-     <label class="form_subName_small">Company</label>
-     <input class="one_in_a_row form-control" type="text" placeholder="Enter your company name">
-  </div>
-  <div>
-     <label class="form_subName_small">Title</label>
-     <input class="one_in_a_row" type="text" placeholder="Manager">
-  </div>
-  <div>
-     <label class="form_subName_small">City/Sate</label>
-     <input class="one_in_a_row" type="text" placeholder=" Street, State, Zip">
-   </div> 
-   <div>
-      <div class="alignleft">
-        <label class="form_subName_small">Start Date</label><br>
-        <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
-      </div>
-      <div class=" alignright">
-         <label class="form_subName_small">End Date</label><br>
-         <input class="two_in_a_row" type="text" placeholder="mm/dd/yyyy">
-      </div>
-   </div>
-   <div>
-       <label class="form_subName_large">Responsibilities</label>
-       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
-       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
-       <input class="one_in_a_row" type="text" placeholder="List your responsibilities">
-   </div>
-   
-    <div>
-       <label class="form_subName_large">Skills Gained</label>
-       <table>
-         <tbody>
-         <tr>
-           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
-             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
-         </tr>
-        <tr>
-           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
-             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
-         </tr>
-          <tr>
-           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
-             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
-         </tr>
-         </tbody>
-         </table>
-         <button id="Submit-intern">submit</button>
-         </div>
-         
-</div>
-</div>
 
-<body>
+
 <div class="background_picture">
   
         <a href="EducationExp.html" >
-          <div class="glyphicon glyphicon-circle-arrow-left arrows"></div>
+          <img height="50px" src="imgs/pageturner_pre.png">
         </a>
   
  
@@ -145,7 +146,10 @@
         <table class="table table-hover">
 				<thead>
 					<tr>
-						<th> Internship
+						<th>
+                        <div class="alignleft"><a class="eduinfo_U" href="#0" id="open-InrenExp" onClick="document.getElementById('popup-form-Internship').style.display='inline' ">Internship </a></div>
+                        <br>
+				
 					    <p >
 An internship is a fixed-term work placement usually done either during the holidays or as part of a university degree.
 </p>
@@ -155,33 +159,34 @@ An internship is a fixed-term work placement usually done either during the holi
 				<tbody>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Company
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Company
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Title
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Title
 						</td>
 					</tr>
 					<tr >
 						<td>
-                       <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp; Dates
+                       <input type="checkbox"  />&nbsp;&nbsp;&nbsp; Dates
 							
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Responsibilities
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Responsibilities
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Skills Gained/Used
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Skills Gained/Used
 						</td>
 					</tr>
                
 				</tbody>
 			</table>
+            <br>
             <p>See more</p>
             <div class="progress">
                 
@@ -194,7 +199,7 @@ An internship is a fixed-term work placement usually done either during the holi
       <table class="table table-hover">
 				<thead>
 					<tr>
-						<th><a class="eduinfo_U" href="#0" id="open-WorkExp" onClick="formPopUp()"> Work Experience</a> 
+						<th> <div class="alignleft"><a class="eduinfo_U" href="#0" id="open-WorkExp" onClick="document.getElementById('popup-form-WorkExp').style.display='inline'"> Work Experience</a> </div><br>
 					    <p >
 
 Work experience gives participants the chance to get an overview of an industry by shadowing a professional in their chosen career.</p></th>
@@ -203,33 +208,34 @@ Work experience gives participants the chance to get an overview of an industry 
 				<tbody>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Company
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Company
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Title
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Title
 						</td>
 					</tr>
 					<tr >
 						<td>
-                        <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Dates
+                        <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Dates
 							
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Responsibilities
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Responsibilities
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Skills Gained/Used
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Skills Gained/Used
 						</td>
 					</tr>
                
 				</tbody>
 			</table>
+            <br>
             <p>See more</p>
             <div class="progress">
                 
@@ -245,7 +251,7 @@ Work experience gives participants the chance to get an overview of an industry 
     </div>
   </div>
      <a href="ActivityPage.html" >
-          <div class="glyphicon glyphicon-circle-arrow-right arrows"></div>
+          <img height="50px" src="imgs/pageturner_next.png">
         </a>
 </div>
 

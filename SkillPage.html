@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <title>Rezzio_skills</title>
 <style type="text/css">
-@import url("css/bootstrap.css");
 @import url("css/gForm1.css");
 
 
@@ -15,10 +13,87 @@
 </head>
 
 <body>
+<div class="hide" id="popup-form-hardSkill">
+
+<div class="container_popform_sport">
+   <div class="form_Name">Hard Skill</div>
+  <div>
+    <p>Hard skills are specific, teachable abilities that can be defined and measured.(examples: Language, Excel, etc.)</p>
+   
+    <br>
+    
+     <video width="400px"  controls >
+ <source src="img/rezzio-intro.mp4" type="video/ogg">
+</source>
+
+</video>
+   
+       <div><label class="form_subName_large alignleft ">Skills Gained </label></div>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Hard Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button type="button" onClick="document.getElementById('popup-form-hardSkill').style.display='none' ">submit</button>
+</div>
+
+</div>
+</div>
+<div class="hide" id="popup-form-softSkill">
+<div class="container_popform_sport">
+   <div class="form_Name">Soft Skill</div>
+   
+  <div>
+    <p>Soft skills are harder to quantify, such as etiquette, getting along with others, listening and engaging in small talk.</p>
+   
+    <br>
+    
+     <video width="400px"  controls >
+ <source src="img/rezzio-intro.mp4" type="video/ogg">
+</source>
+
+</video>
+   
+       <div><label class="form_subName_large alignleft ">Skills Gained </label></div>
+       <table>
+         <tbody>
+         <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Soft  Skill"></td>
+         </tr>
+        <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+         </tr>
+          <tr>
+           <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+             <td><input class="two_in_a_row" type="text" placeholder="Soft Skill"></td>
+         </tr>
+         </tbody>
+         </table>
+         <button type="button" onClick="document.getElementById('popup-form-softSkill').style.display='none' ">submit</button>
+   </div>   
+   </div>  
+   
+</div>
+
+
+
 <div class="background_picture">
   
         <a href="ActivityPage.html" >
-          <div class="glyphicon glyphicon-circle-arrow-left arrows"></div>
+         <img height="50px" src="imgs/pageturner_pre.png">
         </a>
   
  
@@ -29,7 +104,11 @@
         <table class="table table-hover">
 				<thead>
 					<tr>
-						<th> Soft Skills
+						<th>
+                        
+                        
+                        
+                        <a class="eduinfo_U" href="#0" onClick="document.getElementById('popup-form-softSkill').style.display='inline' "> Soft Skills</a>
 					    <p >Soft skill are harder to quantify, such as etiquette, getting along with others, listening and engaging in small talk.
 
 </p></th>
@@ -38,7 +117,7 @@
 				<tbody>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Added Skills
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Added Skills
 						</td>
 					</tr>
 				
@@ -57,7 +136,7 @@
       <table class="table table-hover">
 				<thead>
 					<tr>
-						<th> Hard Skills
+						<th> <a class="eduinfo_U" href="#0" onClick="document.getElementById('popup-form-hardSkill').style.display='inline' "> Hard Skills</a>
 					    <p >
 Hard skills are specific, teachable abilities that can be defined and measured.(examples: Language, Excel, etc.)</p></th>
 					</tr>
@@ -65,7 +144,7 @@ Hard skills are specific, teachable abilities that can be defined and measured.(
 				<tbody>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Added SKills
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Added SKills
 						</td>
 					</tr>
 					
@@ -82,13 +161,13 @@ Hard skills are specific, teachable abilities that can be defined and measured.(
       </div>
     </div>
     <div class="container_banner container_banner_activity">
-     <div class=" banner_text aligncenter" >List your skills</div>
+     <div class=" banner_text aligncenter" >&nbsp;&nbsp;&nbsp;List your skills</div>
      <p><button type="button" class="btn banner_button alignright "> HELP</button></p>
     </div>
   </div>
      <a href="#">
-          <div class="glyphicon glyphicon-ok-circle arrows"></div>
-        </a>
+          <img height="50px" src="imgs/checked.png">
+     </a>
        
        
 </div>

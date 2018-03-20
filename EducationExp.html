@@ -3,19 +3,81 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+   
 <title>Rezzio_EduExp</title>
 <style type="text/css">
 @import url("css/gForm1.css");
-<script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+
 
 </style>
 
 
 
 </head>
+<body>
 
-<script src="js/Rezzio_Onboarding.js"></script>
+<div class="hide" id="popup-form-edu">
+  <div class="container_popform_edu aligncenter">
+   <div class="form_Name">College/University Information</div>
+  <div>
+     <label class="form_subName_small">College/University Name</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="Enter your school name">
+  </div>
+  
+    <div>
+     <label class="form_subName_small">School Name</label>
+     <input class="one_in_a_row form-control" type="text" placeholder="College of Business">
+  </div>
+    <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Major</label><br>
+        <input class="two_in_a_row" type="text" placeholder="Finance">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">Minor</label><br>
+         <input class="two_in_a_row" type="text" placeholder="Marketing">
+      </div>
+   </div>
+     <div>
+      <div class="alignleft">
+        <label class="form_subName_small">GPA</label><br>
+        <input class="one_in_a_row_small" type="text" placeholder="0.0">
+      </div>
+      <div class="alignright">
+        <label class="form_subName_small"></label><br>
+
+      </div>
+      <br>
+      
+     <div>
+      <div class="alignleft">
+        <label class="form_subName_small">Start Year</label><br>
+        <input class="two_in_a_row" type="text" placeholder="yyyy">
+      </div>
+      <div class=" alignright">
+         <label class="form_subName_small">End Year</label><br>
+         <input class="two_in_a_row" type="text" placeholder="yyyy">
+      </div>
+   </div>
+   
+
+   <label class="form_subName_large">College/University Goals</label>
+         <label class="form_subName_small">Goal #1</label>
+     <input class="one_in_a_row form-control" type="text" placeholder=" ">
+          <label class="form_subName_small">Goal #2</label>
+     <input class="one_in_a_row form-control" type="text" placeholder=" ">
+          <label class="form_subName_small">Goal #3</label>
+     <input class="one_in_a_row form-control" type="text" placeholder=" ">
+     
+    
+   </div>
+
+
+          <button type="button" id="Submit-intern" onClick="document.getElementById('popup-form-edu').style.display='none' ">submit</button>
+</div>
+
+
+</div>
 
 
 <div class="background_picture" >
@@ -29,40 +91,44 @@
         <table class="table table-hover">
 				<thead>
 					<tr>
-						<th ><a class="eduinfo_U" href="#0" id="">High School</a>
-					    <p >Add your High School </p> </th>
+						<th >
+                         <div class="alignleft">
+                        <a class="eduinfo_U" href="#0"  onClick="document.getElementById('popup-form-edu').style.display='inline'">High School</a>
+					    <p >Add your High School </p>
+                        </div> </th>
+                        
 					</tr>
 				</thead>
 				<tbody>
 					<tr >
 						<td>
-							 <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;School Name
+							 <input type="checkbox"  />&nbsp;&nbsp;&nbsp;School Name
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Website
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Website
 						</td>
 					</tr>
 					<tr >
 						<td>
-                        <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Zip Code
+                        <input type="checkbox"  />&nbsp;&nbsp;&nbsp;Zip Code
 							
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;GPA/SAT
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;GPA/SAT
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Graduation Date
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Graduation Date
 						</td>
 					</tr>
                     <tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Goals
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Goals
 						</td>
 					</tr>
 				</tbody>
@@ -79,39 +145,43 @@
       <table class="table table-hover">
 				<thead>
 					<tr>
-						<th><a class="eduinfo_U" href="#0"> College/University </a>
-					    <p>Add your College/University</p></th>
+                    
+						<th><div class="alignleft"><a class="eduinfo_U" href="#0" onClick="document.getElementById('popup-form-edu').style.display='inline'"> College/University </a>
+					    <p>Add your College/University</p> </div></th>
+                     
+                       
+                
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;School Name
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;School Name
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Sub School Name
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Sub School Name
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Major
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Major
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;GPA
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;GPA
 						</td>
 					</tr>
 					<tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Graduation Date
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Graduation Date
 						</td>
 					</tr>
                    <tr >
 						<td>
-							<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;Goals
+							<input type="checkbox"  />&nbsp;&nbsp;&nbsp;Goals
 						</td>
 					</tr>
 				</tbody>
@@ -130,7 +200,7 @@
     </div>
   </div>
      <a href="workWxpPage.html">
-          <div class="glyphicon glyphicon-circle-arrow-right arrows"></div>
+          <img height="50px" src="imgs/pageturner_next.png">
         </a>
        	
 </div>
@@ -138,7 +208,6 @@
 
 
 
-</div>
 
 
 </body>
